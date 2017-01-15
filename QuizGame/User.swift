@@ -18,6 +18,7 @@ class User
     let gamesWon: Int
     
     var dbRef: FIRDatabaseReference!
+
     
     init (name: String, userName: String, available: Bool, gamesWon: Int)
     {
@@ -42,9 +43,38 @@ class User
         }
         return aUser
     }
+    
 
-    
-    
+    static func findIfUserAlreadyExistsInFirebase(username: String) -> User?
+    {
+        var foundUser: User?
+        foundUser = nil
+
+        FIRDatabase.database().reference().child("users").queryOrderedByKey().observe(.value,  with: {(snapshot) -> Void in
+            let allUsersDic = snapshot.value as! [String : Any]
+            for oneUser in allUsersDic.values 
+            {
+                let aUserDic = oneUser as! [String : Any]
+                let aUserName = aUserDic["username"] as! String
+                if AppState.sharedInstance.displayName == aUserName
+                {
+                    print("MATCHED \(aUserName)")
+                    let name = aUserDic["name"] as? String ?? ""
+                    let userName = aUserDic["username"] as? String ?? ""
+                    let available = aUserDic["available"] as? Bool
+                    let gamesWon = aUserDic["gameswon"] as? Int ?? 0
+                    foundUser = User(name: name, userName: userName, available: available!, gamesWon: gamesWon)
+                }else{
+                    print("NOT MATCHED \(aUserName)")
+                }
+            }
+
+  
+        })
+        return foundUser
+
+    }
+
     
     func sendUserToFirebase()
     {
@@ -56,6 +86,7 @@ class User
         
         dbRef.child("users").childByAutoId().setValue(userInfo)
     }
+    // AppState.sharedInstance.displayName = user?.displayName
     
     func sendEditToFirebase()
     {

@@ -96,6 +96,10 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qV3-kE-4dz" id="mS3-EH-HE7"/>
+                                    <outlet property="delegate" destination="qV3-kE-4dz" id="xAd-B3-Q6f"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-hC-PE3">
                                 <rect key="frame" x="133" y="553" width="108" height="30"/>
