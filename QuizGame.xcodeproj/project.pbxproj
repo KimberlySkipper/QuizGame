@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030B50D530D8CDE155070A64 /* Pods_QuizGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664D37121B5A265A2BDCC7D8 /* Pods_QuizGame.framework */; };
+		2C2D860E1E281C910017DB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D860D1E281C910017DB15 /* AppDelegate.swift */; };
+		2C2D86131E281C910017DB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D86111E281C910017DB15 /* Main.storyboard */; };
+		2C2D86151E281C910017DB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D86141E281C910017DB15 /* Assets.xcassets */; };
+		2C2D86181E281C910017DB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D86161E281C910017DB15 /* LaunchScreen.storyboard */; };
+		2C2D86201E2821450017DB15 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D861F1E2821450017DB15 /* LogInViewController.swift */; };
+		2C2D86241E2831430017DB15 /* ProperNerdAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86231E2831430017DB15 /* ProperNerdAPIManager.swift */; };
+		2C2D86261E2850030017DB15 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86251E2850030017DB15 /* Game.swift */; };
+		2C2D86281E2855A70017DB15 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86271E2855A70017DB15 /* GameRound.swift */; };
+		2C2D862A1E2856550017DB15 /* PlayerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86291E2856550017DB15 /* PlayerAnswer.swift */; };
+		2C2D86301E285A170017DB15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D862F1E285A170017DB15 /* User.swift */; };
+		2C2D86321E285AAD0017DB15 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86311E285AAD0017DB15 /* Invitation.swift */; };
+		2C4EF4991E28868900A1BDBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EF4981E28868900A1BDBA /* GoogleService-Info.plist */; };
+		2C4EF49B1E29082700A1BDBA /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */; };
+		2C4EF49D1E29088300A1BDBA /* InvitedByTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */; };
+		2C4EF49F1E2909A600A1BDBA /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */; };
+		2C4EF4A11E290B3200A1BDBA /* InvitedByTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */; };
+		2C4EF4A31E2926B200A1BDBA /* JudgementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */; };
+		2C4EF4A51E2979E100A1BDBA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A41E2979E100A1BDBA /* AppState.swift */; };
+		2CA235ED1E2BB3AF00E50395 /* InvitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06CA8B7512D44E87B8F74BA2 /* Pods-QuizGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizGame/Pods-QuizGame.release.xcconfig"; sourceTree = "<group>"; };
+		2C2D860A1E281C910017DB15 /* QuizGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2D860D1E281C910017DB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C2D86121E281C910017DB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C2D86141E281C910017DB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C2D86171E281C910017DB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C2D86191E281C910017DB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2D861F1E2821450017DB15 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2C2D86231E2831430017DB15 /* ProperNerdAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProperNerdAPIManager.swift; sourceTree = "<group>"; };
+		2C2D86251E2850030017DB15 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2C2D86271E2855A70017DB15 /* GameRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		2C2D86291E2856550017DB15 /* PlayerAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerAnswer.swift; sourceTree = "<group>"; };
+		2C2D862F1E285A170017DB15 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C2D86311E285AAD0017DB15 /* Invitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		2C4EF4981E28868900A1BDBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
+		2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedByTableViewController.swift; sourceTree = "<group>"; };
+		2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedByTableViewCell.swift; sourceTree = "<group>"; };
+		2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JudgementViewController.swift; sourceTree = "<group>"; };
+		2C4EF4A41E2979E100A1BDBA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableViewCell.swift; sourceTree = "<group>"; };
+		413B834519322D85434EE928 /* Pods-QuizGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizGame/Pods-QuizGame.debug.xcconfig"; sourceTree = "<group>"; };
+		664D37121B5A265A2BDCC7D8 /* Pods_QuizGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2D86071E281C910017DB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030B50D530D8CDE155070A64 /* Pods_QuizGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169D83140D2FB23C5D6F8312 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				413B834519322D85434EE928 /* Pods-QuizGame.debug.xcconfig */,
+				06CA8B7512D44E87B8F74BA2 /* Pods-QuizGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C2D86011E281C910017DB15 = {
+			isa = PBXGroup;
+			children = (
+				2C2D860C1E281C910017DB15 /* QuizGame */,
+				2C2D860B1E281C910017DB15 /* Products */,
+				169D83140D2FB23C5D6F8312 /* Pods */,
+				83BD42F7A7BF79A6E9D3329B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C2D860B1E281C910017DB15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D860A1E281C910017DB15 /* QuizGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C2D860C1E281C910017DB15 /* QuizGame */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D860D1E281C910017DB15 /* AppDelegate.swift */,
+				2C4EF4A41E2979E100A1BDBA /* AppState.swift */,
+				2C2D86331E285B370017DB15 /* Models */,
+				2C2D86341E285BA40017DB15 /* View Controllers */,
+				2C2D86111E281C910017DB15 /* Main.storyboard */,
+				2C4EF4981E28868900A1BDBA /* GoogleService-Info.plist */,
+				2C2D86141E281C910017DB15 /* Assets.xcassets */,
+				2C2D86161E281C910017DB15 /* LaunchScreen.storyboard */,
+				2C2D86191E281C910017DB15 /* Info.plist */,
+			);
+			path = QuizGame;
+			sourceTree = "<group>";
+		};
+		2C2D86331E285B370017DB15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D86231E2831430017DB15 /* ProperNerdAPIManager.swift */,
+				2C2D86311E285AAD0017DB15 /* Invitation.swift */,
+				2C2D862F1E285A170017DB15 /* User.swift */,
+				2C2D86251E2850030017DB15 /* Game.swift */,
+				2C2D86271E2855A70017DB15 /* GameRound.swift */,
+				2C2D86291E2856550017DB15 /* PlayerAnswer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2C2D86341E285BA40017DB15 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D861F1E2821450017DB15 /* LogInViewController.swift */,
+				2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */,
+				2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */,
+				2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */,
+				2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */,
+				2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */,
+				2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83BD42F7A7BF79A6E9D3329B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664D37121B5A265A2BDCC7D8 /* Pods_QuizGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C2D86091E281C910017DB15 /* QuizGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2D861C1E281C910017DB15 /* Build configuration list for PBXNativeTarget "QuizGame" */;
+			buildPhases = (
+				489F77A559F7AC104F73A8ED /* [CP] Check Pods Manifest.lock */,
+				2C2D86061E281C910017DB15 /* Sources */,
+				2C2D86071E281C910017DB15 /* Frameworks */,
+				2C2D86081E281C910017DB15 /* Resources */,
+				BCF55BF68D91B99B6B5ED7A1 /* [CP] Embed Pods Frameworks */,
+				AD3EAB9160089F1532E6A486 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuizGame;
+			productName = QuizGame;
+			productReference = 2C2D860A1E281C910017DB15 /* QuizGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C2D86021E281C910017DB15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					2C2D86091E281C910017DB15 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C2D86051E281C910017DB15 /* Build configuration list for PBXProject "QuizGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C2D86011E281C910017DB15;
+			productRefGroup = 2C2D860B1E281C910017DB15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C2D86091E281C910017DB15 /* QuizGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C2D86081E281C910017DB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D86181E281C910017DB15 /* LaunchScreen.storyboard in Resources */,
+				2C4EF4991E28868900A1BDBA /* GoogleService-Info.plist in Resources */,
+				2C2D86151E281C910017DB15 /* Assets.xcassets in Resources */,
+				2C2D86131E281C910017DB15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		489F77A559F7AC104F73A8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3EAB9160089F1532E6A486 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizGame/Pods-QuizGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF55BF68D91B99B6B5ED7A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizGame/Pods-QuizGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C2D86061E281C910017DB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D86321E285AAD0017DB15 /* Invitation.swift in Sources */,
+				2C2D86241E2831430017DB15 /* ProperNerdAPIManager.swift in Sources */,
+				2C2D86281E2855A70017DB15 /* GameRound.swift in Sources */,
+				2C4EF49D1E29088300A1BDBA /* InvitedByTableViewController.swift in Sources */,
+				2C2D860E1E281C910017DB15 /* AppDelegate.swift in Sources */,
+				2C2D862A1E2856550017DB15 /* PlayerAnswer.swift in Sources */,
+				2C4EF49B1E29082700A1BDBA /* InvitationViewController.swift in Sources */,
+				2C2D86201E2821450017DB15 /* LogInViewController.swift in Sources */,
+				2C4EF4A11E290B3200A1BDBA /* InvitedByTableViewCell.swift in Sources */,
+				2C4EF4A51E2979E100A1BDBA /* AppState.swift in Sources */,
+				2C4EF4A31E2926B200A1BDBA /* JudgementViewController.swift in Sources */,
+				2C2D86261E2850030017DB15 /* Game.swift in Sources */,
+				2C4EF49F1E2909A600A1BDBA /* GameScreenViewController.swift in Sources */,
+				2CA235ED1E2BB3AF00E50395 /* InvitationTableViewCell.swift in Sources */,
+				2C2D86301E285A170017DB15 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C2D86111E281C910017DB15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2D86121E281C910017DB15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C2D86161E281C910017DB15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2D86171E281C910017DB15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C2D861A1E281C910017DB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C2D861B1E281C910017DB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2D861D1E281C910017DB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 413B834519322D85434EE928 /* Pods-QuizGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuizGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.quizgame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2C2D861E1E281C910017DB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CA8B7512D44E87B8F74BA2 /* Pods-QuizGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuizGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.quizgame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C2D86051E281C910017DB15 /* Build configuration list for PBXProject "QuizGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2D861A1E281C910017DB15 /* Debug */,
+				2C2D861B1E281C910017DB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2D861C1E281C910017DB15 /* Build configuration list for PBXNativeTarget "QuizGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2D861D1E281C910017DB15 /* Debug */,
+				2C2D861E1E281C910017DB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C2D86021E281C910017DB15 /* Project object */;
+}
