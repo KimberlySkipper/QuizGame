@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,18 +23,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTK-4H-5n0" customClass="GIDSignInButton">
-                                <rect key="frame" x="72" y="278" width="230" height="48"/>
+                                <rect key="frame" x="72.5" y="503.5" width="230" height="48"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="0to-Lb-dHk"/>
                                     <constraint firstAttribute="width" constant="230" id="84N-DX-6ny"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The bad guys trying" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-53-kBe">
+                                <rect key="frame" x="30" y="0.0" width="315" height="463.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Qe-53-kBe" secondAttribute="trailing" constant="30" id="4DP-ng-pTb"/>
+                            <constraint firstItem="tTK-4H-5n0" firstAttribute="top" secondItem="0Qe-53-kBe" secondAttribute="bottom" constant="40" id="Mph-lp-k2B"/>
                             <constraint firstItem="tTK-4H-5n0" firstAttribute="centerX" secondItem="5An-w0-tke" secondAttribute="centerX" id="Xav-sQ-idv"/>
-                            <constraint firstItem="tTK-4H-5n0" firstAttribute="centerY" secondItem="5An-w0-tke" secondAttribute="centerY" id="vd7-y5-WoF"/>
+                            <constraint firstItem="0Qe-53-kBe" firstAttribute="leading" secondItem="5An-w0-tke" secondAttribute="leading" constant="30" id="ho5-K6-gzj"/>
+                            <constraint firstItem="0Qe-53-kBe" firstAttribute="top" secondItem="xxX-3A-icj" secondAttribute="bottom" id="jTh-So-5qR"/>
+                            <constraint firstItem="tTK-4H-5n0" firstAttribute="centerY" secondItem="5An-w0-tke" secondAttribute="centerY" multiplier="1.75" id="vd7-y5-WoF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8L6-P1-Jcr"/>
@@ -59,26 +67,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-TS-Y34">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InviteUserCell" id="25s-Vi-7Xt" customClass="InvitationTableViewCell" customModule="QuizGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="25s-Vi-7Xt" id="yIT-1A-Ibc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-TK-QUJ">
-                                                    <rect key="frame" x="323" y="7" width="37" height="30"/>
+                                                    <rect key="frame" x="314" y="4.5" width="46" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <state key="normal" title="Invite">
-                                                        <color key="titleColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="0.93000000000000005" green="0.89280000000000004" blue="0.90954000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eransom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8i-Pk-lbu">
-                                                    <rect key="frame" x="15" y="11.5" width="67" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="15" y="10" width="78" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -89,6 +99,7 @@
                                                 <constraint firstItem="R8i-Pk-lbu" firstAttribute="centerY" secondItem="yIT-1A-Ibc" secondAttribute="centerY" id="qiR-E6-4WI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="inviteButton" destination="QWe-TK-QUJ" id="zTa-j7-9GN"/>
                                             <outlet property="userNameLabel" destination="R8i-Pk-lbu" id="U7x-VN-Pba"/>
@@ -102,8 +113,12 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-hC-PE3">
-                                <rect key="frame" x="133" y="553" width="108" height="30"/>
-                                <state key="normal" title="View Invitations"/>
+                                <rect key="frame" x="114" y="547" width="146" height="36"/>
+                                <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="View Invitations">
+                                    <color key="titleColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="8Oe-UG-fJW" kind="show" identifier="WhoInvitedWhoSegue" id="a86-ny-Whg"/>
                                 </connections>
@@ -149,13 +164,14 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="87x-YI-lrm" id="8Hw-7o-xW7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50C-j0-GYO">
                                             <rect key="frame" x="180" y="5" width="67" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="Accept">
                                                 <color key="titleColor" red="0.875" green="0.161" blue="0.20860000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
@@ -167,17 +183,19 @@
                                             <rect key="frame" x="289" y="6" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="Deny"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eransom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xby-qV-t8X">
                                             <rect key="frame" x="44" y="10" width="84" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -349,7 +367,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="195-1G-Xv2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Sa1-9M-zmz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Sa1-9M-zmz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -364,4 +382,7 @@
             <point key="canvasLocation" x="99.5" y="175.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="The bad guys trying" width="300" height="358"/>
+    </resources>
 </document>

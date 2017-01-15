@@ -45,16 +45,16 @@ class User
     }
     
 
-    static func findIfUserAlreadyExistsInFirebase(username: String) -> User?
+    static func createUserInFirebaseIfNotFound(username: String)
     {
-        var foundUser: User?
-        foundUser = nil
-
         FIRDatabase.database().reference().child("users").queryOrderedByKey().observe(.value,  with: {(snapshot) -> Void in
             let allUsersDic = snapshot.value as! [String : Any]
-            for oneUser in allUsersDic.values 
+            
+            var foundUser: User?
+            foundUser = nil
+            for aUserKey in allUsersDic.keys
             {
-                let aUserDic = oneUser as! [String : Any]
+                let aUserDic = allUsersDic[aUserKey] as! [String : Any]
                 let aUserName = aUserDic["username"] as! String
                 if AppState.sharedInstance.displayName == aUserName
                 {
@@ -64,15 +64,20 @@ class User
                     let available = aUserDic["available"] as? Bool
                     let gamesWon = aUserDic["gameswon"] as? Int ?? 0
                     foundUser = User(name: name, userName: userName, available: available!, gamesWon: gamesWon)
+                    foundUser?.userKey = aUserKey
                 }else{
                     print("NOT MATCHED \(aUserName)")
                 }
             }
-
-  
+            if foundUser == nil
+            {
+                let theOne = User(name: AppState.sharedInstance.displayName!, userName : AppState.sharedInstance.displayName!, available: true, gamesWon: 0)
+                theOne.sendUserToFirebase()
+            }else{
+                
+                print("we already have a user!(There is only on NEO")
+            }
         })
-        return foundUser
-
     }
 
     

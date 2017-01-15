@@ -29,11 +29,9 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
         
         configureDatabase()
         
-        var userMatchedInFB =
-        User.findIfUserAlreadyExistsInFirebase(username: AppState.sharedInstance.displayName!)
+        User.createUserInFirebaseIfNotFound(username: AppState.sharedInstance.displayName!)
         
-      //  if theThatThing is NIl then we need to creat a FIREBASE user
-
+     
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
