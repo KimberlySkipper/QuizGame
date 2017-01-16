@@ -44,7 +44,6 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     //MARK: - Firebase methods
     
     deinit
@@ -56,20 +55,22 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
     {
         dbRef = FIRDatabase.database().reference()
         refHandle = dbRef.child("users").observe(.childAdded, with: {(snapshot) -> Void in
-            let gameUser = User.createUserFromJsonDictionary(snapshot.value as! [String : Any])
-            gameUser?.userKey = snapshot.key
-            self.listOfUsers.append(gameUser!)
-//            let indexPath = IndexPath(row: self.listOfUsers.count - 1, section: 0)
-//            self.tableView.insertRows(at: [indexPath], with: .automatic)
+            let aUser = User.createUserFromJsonDictionary(snapshot.value as! [String : Any])
+            aUser?.userKey = snapshot.key
+            self.listOfUsers.append(aUser!)
+            //            let indexPath = IndexPath(row: self.listOfUsers.count - 1, section: 0)
+            //            self.tableView.insertRows(at: [indexPath], with: .automatic)
             self.tableView.beginUpdates()
             self.tableView.insertRows(at: [IndexPath(row: self.listOfUsers.count-1, section: 0)], with: .automatic)
             self.tableView.endUpdates()
             //self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-
+            
         })
         
     }
-    
+
+    //MARK: Table View Data Source
+       
     func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
@@ -97,6 +98,15 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
 
     }
+    
+    //MARK: Action Handlers
+    
+    @IBAction func inviteAPlayer(_ sender: Any)
+    {
+        
+    }
+
+    
     
     @IBAction func logOut(_ sender: UIBarButtonItem)
   {

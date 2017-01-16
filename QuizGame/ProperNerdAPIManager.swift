@@ -78,34 +78,7 @@ class ProperNerdAPIManager
 
 }// end class
 
-//if let escapedSearchTerm = itunesSearchTerm.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)
-//{
 
-
-
-//    func createQAInfoArrayFromDictionary (_ qaDictionaryMadeFromJSONFile: [Any]) -> [GameRound]?
-//    {
-//        var arrayOfQAs = [GameRound]()
-//
-//        
-//        if qaDictionaryMadeFromJSONFile.count > 0
-//        {
-//            for anEntry in qaDictionaryMadeFromJSONFile
-//            {
-//                if let aSingleGameRoundDictionary = anEntry as? [String: Any]
-//                {
-//                    // let aCategory = aSingleGameRoundDictionary["category"] as? String
-//                    let aQuestion = aSingleGameRoundDictionary["question"] as? String
-//                    let anAnswer = aSingleGameRoundDictionary["answer"] as? String
-//                    
-//                    let aGameRound = GameRound(question: aQuestion!, correctAnswer: anAnswer!)
-//                    
-//                    arrayOfQAs.append(aGameRound)
-//                }
-//            }
-//        }
-//        return arrayOfQAs
-//    }
     
 
 

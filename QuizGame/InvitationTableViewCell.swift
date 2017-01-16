@@ -12,7 +12,6 @@ class InvitationTableViewCell: UITableViewCell
 {
     
     @IBOutlet weak var userNameLabel: UILabel!
-    
     @IBOutlet weak var inviteButton: UIButton!
     
        override func awakeFromNib() {
@@ -26,5 +25,10 @@ class InvitationTableViewCell: UITableViewCell
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func inviteSomeoneToPlay(_ sender: Any)
+    {
+        
+    }
 
-}
+}//end class

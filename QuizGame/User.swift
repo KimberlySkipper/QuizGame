@@ -75,7 +75,7 @@ class User
                 theOne.sendUserToFirebase()
             }else{
                 
-                print("we already have a user!(There is only on NEO")
+                print("we already have a user!(There is only one NEO)")
             }
         })
     }

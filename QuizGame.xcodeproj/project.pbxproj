@@ -21,11 +21,11 @@
 		2C2D86321E285AAD0017DB15 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D86311E285AAD0017DB15 /* Invitation.swift */; };
 		2C4EF4991E28868900A1BDBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4EF4981E28868900A1BDBA /* GoogleService-Info.plist */; };
 		2C4EF49B1E29082700A1BDBA /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */; };
-		2C4EF49D1E29088300A1BDBA /* InvitedByTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */; };
 		2C4EF49F1E2909A600A1BDBA /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */; };
 		2C4EF4A11E290B3200A1BDBA /* InvitedByTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */; };
 		2C4EF4A31E2926B200A1BDBA /* JudgementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */; };
 		2C4EF4A51E2979E100A1BDBA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4EF4A41E2979E100A1BDBA /* AppState.swift */; };
+		2C7077971E2D68C5002BEEB4 /* InvitedByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7077961E2D68C4002BEEB4 /* InvitedByViewController.swift */; };
 		2CA235ED1E2BB3AF00E50395 /* InvitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,11 +46,11 @@
 		2C2D86311E285AAD0017DB15 /* Invitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
 		2C4EF4981E28868900A1BDBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
-		2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedByTableViewController.swift; sourceTree = "<group>"; };
 		2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
 		2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedByTableViewCell.swift; sourceTree = "<group>"; };
 		2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JudgementViewController.swift; sourceTree = "<group>"; };
 		2C4EF4A41E2979E100A1BDBA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2C7077961E2D68C4002BEEB4 /* InvitedByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedByViewController.swift; sourceTree = "<group>"; };
 		2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableViewCell.swift; sourceTree = "<group>"; };
 		413B834519322D85434EE928 /* Pods-QuizGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizGame/Pods-QuizGame.debug.xcconfig"; sourceTree = "<group>"; };
 		664D37121B5A265A2BDCC7D8 /* Pods_QuizGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				2C2D86231E2831430017DB15 /* ProperNerdAPIManager.swift */,
-				2C2D86311E285AAD0017DB15 /* Invitation.swift */,
 				2C2D862F1E285A170017DB15 /* User.swift */,
+				2C2D86311E285AAD0017DB15 /* Invitation.swift */,
 				2C2D86251E2850030017DB15 /* Game.swift */,
 				2C2D86271E2855A70017DB15 /* GameRound.swift */,
 				2C2D86291E2856550017DB15 /* PlayerAnswer.swift */,
@@ -129,13 +129,21 @@
 			children = (
 				2C2D861F1E2821450017DB15 /* LogInViewController.swift */,
 				2C4EF49A1E29082700A1BDBA /* InvitationViewController.swift */,
-				2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */,
-				2C4EF49C1E29088300A1BDBA /* InvitedByTableViewController.swift */,
-				2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */,
+				2C7077961E2D68C4002BEEB4 /* InvitedByViewController.swift */,
 				2C4EF49E1E2909A600A1BDBA /* GameScreenViewController.swift */,
 				2C4EF4A21E2926B200A1BDBA /* JudgementViewController.swift */,
+				2C7077981E2D6A80002BEEB4 /* Custom Cells */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2C7077981E2D6A80002BEEB4 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C4EF4A01E290B3200A1BDBA /* InvitedByTableViewCell.swift */,
+				2CA235EC1E2BB3AF00E50395 /* InvitationTableViewCell.swift */,
+			);
+			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
 		83BD42F7A7BF79A6E9D3329B /* Frameworks */ = {
@@ -273,9 +281,9 @@
 				2C2D86321E285AAD0017DB15 /* Invitation.swift in Sources */,
 				2C2D86241E2831430017DB15 /* ProperNerdAPIManager.swift in Sources */,
 				2C2D86281E2855A70017DB15 /* GameRound.swift in Sources */,
-				2C4EF49D1E29088300A1BDBA /* InvitedByTableViewController.swift in Sources */,
 				2C2D860E1E281C910017DB15 /* AppDelegate.swift in Sources */,
 				2C2D862A1E2856550017DB15 /* PlayerAnswer.swift in Sources */,
+				2C7077971E2D68C5002BEEB4 /* InvitedByViewController.swift in Sources */,
 				2C4EF49B1E29082700A1BDBA /* InvitationViewController.swift in Sources */,
 				2C2D86201E2821450017DB15 /* LogInViewController.swift in Sources */,
 				2C4EF4A11E290B3200A1BDBA /* InvitedByTableViewCell.swift in Sources */,

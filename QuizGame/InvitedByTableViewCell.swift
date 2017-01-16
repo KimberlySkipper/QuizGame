@@ -10,6 +10,10 @@ import UIKit
 
 class InvitedByTableViewCell: UITableViewCell
 {
+    @IBOutlet weak var playerInvitedNameLabel: UILabel!
+       
+    @IBOutlet weak var acceptGameButton: UIButton!
+    @IBOutlet weak var denyGameButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
