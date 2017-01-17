@@ -180,35 +180,45 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbY-6M-cNo">
-                                                    <rect key="frame" x="313" y="4" width="47" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <state key="normal" title="Deny">
-                                                        <color key="titleColor" red="0.875" green="0.161" blue="0.20860000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eransom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opY-ay-kT5">
-                                                    <rect key="frame" x="15" y="10" width="78" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mak-Aa-Ooo">
-                                                    <rect key="frame" x="203" y="4.5" width="60" height="35"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <state key="normal" title="Accept"/>
+                                                    <rect key="frame" x="265" y="7.5" width="49" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Accept">
+                                                        <color key="titleColor" red="0.20000000000000001" green="1" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <segue destination="pcj-lK-Wjx" kind="show" identifier="PlayGameSegue" id="yT0-gn-17R"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbY-6M-cNo">
+                                                    <rect key="frame" x="313" y="4" width="47" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Deny">
+                                                        <color key="titleColor" red="0.875" green="0.161" blue="0.20860000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opY-ay-kT5">
+                                                    <rect key="frame" x="90" y="12" width="66" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-Ct-jfk">
+                                                    <rect key="frame" x="15" y="12" width="55" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.84333333330000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="opY-ay-kT5" firstAttribute="centerY" secondItem="KHb-Fs-uYe" secondAttribute="centerY" id="95B-LO-7li"/>
-                                                <constraint firstItem="ZbY-6M-cNo" firstAttribute="leading" secondItem="Mak-Aa-Ooo" secondAttribute="trailing" constant="50" id="HcC-8p-zXm"/>
+                                                <constraint firstItem="wxj-Ct-jfk" firstAttribute="centerY" secondItem="opY-ay-kT5" secondAttribute="centerY" id="Uk9-zk-FOF"/>
                                                 <constraint firstAttribute="trailing" secondItem="ZbY-6M-cNo" secondAttribute="trailing" constant="15" id="XZG-Dc-FcP"/>
                                                 <constraint firstItem="ZbY-6M-cNo" firstAttribute="centerY" secondItem="KHb-Fs-uYe" secondAttribute="centerY" id="d3R-sj-LMh"/>
+                                                <constraint firstItem="wxj-Ct-jfk" firstAttribute="leading" secondItem="KHb-Fs-uYe" secondAttribute="leading" constant="15" id="fCW-h5-4gh"/>
+                                                <constraint firstItem="ZbY-6M-cNo" firstAttribute="leading" secondItem="Mak-Aa-Ooo" secondAttribute="trailing" constant="10" id="ssI-eb-ACs"/>
                                                 <constraint firstItem="Mak-Aa-Ooo" firstAttribute="centerY" secondItem="KHb-Fs-uYe" secondAttribute="centerY" id="vvt-1V-r8f"/>
-                                                <constraint firstItem="opY-ay-kT5" firstAttribute="leading" secondItem="KHb-Fs-uYe" secondAttribute="leading" constant="15" id="wHe-e8-7PK"/>
+                                                <constraint firstItem="opY-ay-kT5" firstAttribute="leading" secondItem="wxj-Ct-jfk" secondAttribute="trailing" constant="20" id="wsY-7Z-fNX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.029999999999999999" green="0.026249999999999999" blue="0.029999999999999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,6 +226,7 @@
                                             <outlet property="acceptGameButton" destination="Mak-Aa-Ooo" id="9o1-Ud-dc7"/>
                                             <outlet property="denyGameButton" destination="ZbY-6M-cNo" id="0kK-r2-yr1"/>
                                             <outlet property="playerInvitedNameLabel" destination="opY-ay-kT5" id="xfm-Kv-sBw"/>
+                                            <outlet property="whoSentTheInviteLabel" destination="wxj-Ct-jfk" id="xSA-pF-xtf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

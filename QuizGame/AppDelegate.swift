@@ -61,21 +61,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate
             // Then push that view controller onto the navigation stack
             let rootViewController = self.window!.rootViewController as! UINavigationController
             rootViewController.pushViewController(viewController, animated: true)
-            
-            
-            //self.window!.rootViewController?.pushViewController(viewController, animated: true)
-            
-//        self.window!.rootViewController?.performSegue(withIdentifier: "ShowInviteSegue", sender: nil)
         }
-        
-        //
-
     }
+    
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!)
     {
-        // Perform any operations when the user disconnects from app here.
-        // ...
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

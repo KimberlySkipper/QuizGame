@@ -121,6 +121,7 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
     } catch let signOutError as NSError {
         print ("Error signing out: %@", signOutError)
     }
+    //FIXME: change user to available = false
     self.navigationController?.popViewController(animated: true)
    }
 

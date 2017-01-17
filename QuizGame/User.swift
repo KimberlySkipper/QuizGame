@@ -74,7 +74,7 @@ class User
                 let theOne = User(name: AppState.sharedInstance.displayName!, userName : AppState.sharedInstance.displayName!, available: true, gamesWon: 0)
                 theOne.sendUserToFirebase()
             }else{
-                
+                //TODO: set available to true
                 print("we already have a user!(There is only one NEO)")
             }
         })

@@ -11,6 +11,8 @@ import UIKit
 class InvitedByTableViewCell: UITableViewCell
 {
     @IBOutlet weak var playerInvitedNameLabel: UILabel!
+    
+    @IBOutlet weak var whoSentTheInviteLabel: UILabel!
        
     @IBOutlet weak var acceptGameButton: UIButton!
     @IBOutlet weak var denyGameButton: UIButton!

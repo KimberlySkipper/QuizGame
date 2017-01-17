@@ -58,6 +58,8 @@ class InvitedByViewController: UIViewController, UITableViewDelegate, UITableVie
         let anInvitation = listOfInvitations[indexPath.row]
 
         cell.playerInvitedNameLabel.text = ("\(anInvitation.receiver)")
+        cell.whoSentTheInviteLabel.text = ("\(anInvitation.sender)")
+
         
         return cell
         
