@@ -86,9 +86,7 @@
                                                         <color key="titleColor" red="0.93000000000000005" green="0.89280000000000004" blue="0.90954000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="InviteAPlayer:" destination="qV3-kE-4dz" eventType="touchUpInside" id="CdW-hh-Axt"/>
-                                                        <action selector="inviteAPlayer:" destination="qV3-kE-4dz" eventType="touchUpInside" id="rR9-Eo-gjH"/>
-                                                        <action selector="inviteSomeoneToPlay:" destination="25s-Vi-7Xt" eventType="touchUpInside" id="Yzd-Io-vTV"/>
+                                                        <action selector="inviteAPlayer:" destination="qV3-kE-4dz" eventType="touchUpInside" id="5bN-h4-xaD"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eransom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8i-Pk-lbu">

@@ -48,20 +48,21 @@ class Invitation
     }
     
     
+    func sendEditToFirebase()
+    {
+        dbRef = FIRDatabase.database().reference()
+        let inviteInfo: [String: Any] = ["sender": sender,
+                                         "receiver": receiver]
+    
+        dbRef.child("invitations").child(inviteKey!).setValue(inviteInfo)
+        
+    }
+
+    
+    
 }// end class
 
 // AppState.sharedInstance.displayName = user?.displayName
 
-//func sendEditToFirebase()
-//{
-//    dbRef = FIRDatabase.database().reference()
-//    let userInfo: [String: Any] = ["name": name,
-//                                   "username": userName,
-//                                   "available": available,
-//                                   "gameswon": gamesWon ]
-//    
-//    dbRef.child("users").child(userKey!).setValue(userInfo)
-//    
-//}
 
 

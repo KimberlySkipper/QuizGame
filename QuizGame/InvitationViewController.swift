@@ -88,11 +88,6 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "InviteUserCell", for: indexPath) as! InvitationTableViewCell
         let aUser = listOfUsers[indexPath.row]
         
-//        let userName = aUser.userName
-//        let gameUserSnapshot = listOfUsers[indexPath.row]
-//        let gameUser = gameUserSnapshot.userName as! Dictionary<String,String>
-//        let messageSnapshot = messages[indexPath.row]
-//        let message = messageSnapshot.value as! Dictionary<String, String>
         cell.userNameLabel.text = ("\(aUser.userName)")
         
         return cell
@@ -101,9 +96,16 @@ class InvitationViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //MARK: Action Handlers
     
-    @IBAction func inviteAPlayer(_ sender: Any)
+    @IBAction func inviteAPlayer(_ sender: UIButton)
     {
+       // var newInvite
+        let contentView = sender.superview
+        let cell = contentView?.superview as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        let invitedUser = listOfUsers[indexPath!.row]
+        let invite = Invitation(sender: AppState.sharedInstance.displayName!, receiver: invitedUser.userName)
         
+        invite.sendInvitationToFire()
     }
 
     
